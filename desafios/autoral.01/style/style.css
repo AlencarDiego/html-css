@@ -20,15 +20,17 @@
 }
 
 body {
-    background-color: #0A0A0A;
+    background-color: white;
     font-family: var(--fonte00);
 }
 
 header {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    margin-bottom: 10px;
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
 }
 
 header > h1 {
@@ -52,7 +54,7 @@ header > p {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.336);
 }
 
-main {
+main.evento {
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
@@ -60,14 +62,80 @@ main {
     padding: 20px;
     background-color: #000000;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
 }
 
-main > h1 {
+main.evento > h1 {
     color: white;
     font-family: var(--fonte00);
     font-size: 2em;
     font-weight: bold;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
     text-align: center;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.082);
+}
+
+main.evento > p {
+    color: white;
+    margin: 15px 0px;
+    text-align: center;
+    text-indent: 30px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+main.evento img {
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+main.preletores {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    padding: 5px 20px 20px 20px;
+    background-color: #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+}
+
+main.preletores > h1 {
+    color: white;
+    margin-top: 10px;
+    font-family: var(--fonte00);
+    font-size: 2em;
+    font-weight: bold;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.082);
+}
+
+main.preletores img {
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--cor2);
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 8px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
 }
